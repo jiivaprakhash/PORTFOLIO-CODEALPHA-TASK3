@@ -1,77 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Jeevaprakash | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+    <!-- Navbar -->
     <header>
-        <div class="container">
-            <h1>Jeevaprakhash S V</h1>
+        <div class="container nav-container">
+
+            <div class="logo">
+                Jeevaprakash
+            </div>
+
             <nav>
                 <ul>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <!-- Dark Mode Toggle Button -->
-            <button id="darkModeToggle">Toggle Dark Mode</button>
+
         </div>
     </header>
 
-    <section id="about" class="fade-in">
-        <div class="container">
-            <div class="about-content">
-                <div class="text">
-                    <h2>About Me</h2>
-                    <p>Hello! I'm Jeevaprakhash S V, a student passionate about technology and innovation. I enjoy tackling complex problems and creating impactful solutions. Welcome to my portfolio!</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="container hero-container">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    FULL STACK DEVELOPER
+                </p>
+
+                <h1>
+                    Hi, I'm <span>Jeevaprakash S V</span>
+                </h1>
+
+                <p class="hero-description">
+                    Passionate MERN Stack Developer focused on building modern,
+                    scalable and user-friendly web applications.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <section id="projects" class="fade-in">
+    <!-- About -->
+    <section id="about" class="section">
+
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project-gallery">
-                <div class="project">
-                    <div class="project-header">
-                        <h3>Blockchain Voting System</h3>
-                    </div>
-                    <p>A decentralized voting system that uses blockchain technology to enhance security and transparency in elections. This project ensures that votes are tamper-proof and verifiable by all participants.</p>
-                    <p>Features include encrypted vote casting, immutable records, and a transparent process that can be audited by anyone. The system is designed to be scalable and adaptable for various election types.</p>
-                    <p>The user interface is intuitive, making it easy for voters to participate while maintaining robust backend security. This project demonstrates the application of blockchain beyond cryptocurrency.</p>
-                    <p>It also includes an admin panel for managing elections, monitoring real-time results, and generating detailed reports.</p>
-                </div>
-                <div class="project">
-                    <div class="project-header">
-                        <h3>Ticket Reservation System</h3>
-                    </div>
-                    <p>A comprehensive system for managing ticket reservations, allowing users to book and cancel tickets with ease. This project supports various types of events, including concerts, flights, and movie screenings.</p>
-                    <p>Features include real-time seat selection, automated booking confirmations, and a user-friendly interface that simplifies the reservation process. It integrates with payment gateways to handle transactions securely.</p>
-                    <p>The system provides administrative tools for managing event listings, tracking sales, and generating reports. It is designed to handle high traffic and large numbers of concurrent users.</p>
-                    <p>Additional functionalities include email notifications, customizable ticket types, and the ability to manage discounts and promotions.</p>
-                </div>
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <div class="about-card">
+
+                <p>
+                    I am currently pursuing B.Tech in Computer Science and
+                    Business Systems at PSG Institute of Technology and Applied Research.
+                </p>
+
+                <p>
+                    I specialize in MERN stack development and enjoy building
+                    full-stack applications using React.js, Node.js, Express.js,
+                    and MongoDB.
+                </p>
+
+                <p>
+                    I am passionate about solving real-world problems through
+                    scalable software solutions and continuously learning modern technologies.
+                </p>
+
             </div>
+
         </div>
+
     </section>
 
-    <section id="contact" class="fade-in">
+    <!-- Skills -->
+    <section id="skills" class="section">
+
         <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email: <a href="mailto:jeevaprakhash45@gmail.com">jeevaprakhash45@gmail.com</a></p>
+
+            <h2 class="section-title">
+                Skills
+            </h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React.js</div>
+                <div class="skill-card">Node.js</div>
+                <div class="skill-card">Express.js</div>
+                <div class="skill-card">MongoDB</div>
+                <div class="skill-card">MySQL</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">GitHub</div>
+                <div class="skill-card">REST APIs</div>
+
+            </div>
+
         </div>
+
     </section>
 
+    <!-- Projects -->
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Projects
+            </h2>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+
+                    <h3>RentMate</h3>
+
+                    <p>
+                        A MERN stack based property rental management system
+                        for managing properties, tenants and rental listings.
+                    </p>
+
+                    <div class="tech-stack">
+                        React • Node.js • MongoDB
+                    </div>
+
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+
+                    <h3>Course Feedback System</h3>
+
+                    <p>
+                        A web application that allows students to provide
+                        feedback and helps faculty manage responses effectively.
+                    </p>
+
+                    <div class="tech-stack">
+                        MERN Stack
+                    </div>
+
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+
+                    <h3>Moonlit</h3>
+
+                    <p>
+                        A sleep tracker Android application designed to monitor
+                        and improve user sleeping habits.
+                    </p>
+
+                    <div class="tech-stack">
+                        Java • XML • Android Studio
+                    </div>
+
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+
+                    <h3>IoT Environmental Monitor</h3>
+
+                    <p>
+                        An IoT-based monitoring system for temperature,
+                        air pollution and noise detection with real-time alerts.
+                    </p>
+
+                    <div class="tech-stack">
+                        IoT • Sensors • Monitoring
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Contact
+            </h2>
+
+            <div class="contact-card">
+
+                <p>
+                    📧 jeevaprakhash45@gmail.com
+                </p>
+
+                <p>
+                    🔗 Github:
+                    <a href="https://github.com/jiivaprakhash" target="_blank">
+                        github.com/jiivaprakhash
+                    </a>
+                </p>
+
+                <p>
+                    🔗 LeetCode:
+                    <a href="https://leetcode.com/u/JIVAA/" target="_blank">
+                        leetcode.com/u/JIVAA
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
     <footer>
+
         <div class="container">
-            <p>&copy; 2024 Jeevaprakhash S V. All Rights Reserved.</p>
+
+            <p>
+                © 2026 Jeevaprakash S V • All Rights Reserved
+            </p>
+
         </div>
+
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
